@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Entity;
-
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Vich\UploaderBundle\Naming\SmartUniqueNamer ;
 use App\Repository\ArticleRepository;
 use Doctrine\ORM\Mapping as ORM;
 
