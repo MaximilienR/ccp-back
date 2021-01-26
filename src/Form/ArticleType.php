@@ -15,7 +15,7 @@ class ArticleType extends AbstractType
             ->add('Nom')
             ->add('Price')
             ->add('Description')
-        ;
+            ;
     }
 
     public function configureOptions(OptionsResolver $resolver)
