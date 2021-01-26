@@ -17,7 +17,20 @@ class Belts
      * @ORM\Column(type="integer")
      */
     private $id;
+    /**
+     * @var string|null
+     * @ORM\Column(type="string", length=255)
+     */
+    
+    private $image;
 
+    /**
+     * @var File|null
+     * @Assert\Image(mimeTypes={"image/jpeg", "image/jpg", "image/png"})
+     * @Vich\UploadableField(mapping="upload", fileNameProperty="image")
+     *
+     */
+    private $imageFile;
     public function getId(): ?int
     {
         return $this->id;
