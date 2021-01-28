@@ -1,3 +1,4 @@
+{% set currentPath = app.request.get('_route') %}
  <!DOCTYPE html>
 <html amp >
 <head>
@@ -84,8 +85,10 @@ body{font-family: Manrope;}blockquote{border-color: #6d7a71;}div[submit-success]
                 <!-- SHOW BUTTON END -->
                 {% if app.user %}
                     <a href="{{path('app_logout')}}"
-                    class="nav-items nav-link">deconexion</a>
+                    class="nav-items nav-link">{{app.user.username}} - deconexion</a>
                 {% else %}
+                 <a href="{{path('app_login')}}"
+                    class="nav-items nav-link">connexion</a>
                 {% endif %}
              
             </div>
