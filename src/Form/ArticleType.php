@@ -16,6 +16,7 @@ class ArticleType extends AbstractType
             ->add('Nom')
             ->add('Price')
             ->add('Description');
+            //$builder->add('imageFile',Filetype) 
     }
 
     public function configureOptions(OptionsResolver $resolver)
