@@ -13,7 +13,7 @@ class HelpController extends AbstractController
      */
     public function index(): Response
     {
-        return $this->render('help/index.html.twig', [
+        return $this->render('front/help/index.html.twig', [
             'controller_name' => 'HelpController',
         ]);
     }

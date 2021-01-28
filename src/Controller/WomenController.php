@@ -13,7 +13,7 @@ class WomenController extends AbstractController
      */
     public function index(): Response
     {
-        return $this->render('women/index.html.twig');
+        return $this->render('front/women/index.html.twig');
 }}
   
 

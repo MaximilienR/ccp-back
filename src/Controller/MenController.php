@@ -13,7 +13,7 @@ class MenController extends AbstractController
      */
     public function index(): Response
     {
-        return $this->render('men/index.html.twig', [
+        return $this->render('front/men/index.html.twig', [
             'controller_name' => 'MenController',
         ]);
     }
